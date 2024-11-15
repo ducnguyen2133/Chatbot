@@ -1,0 +1,37 @@
+version: "3.1"
+
+rules:
+  - rule: Provide product features
+    steps:
+      - intent: ask_product_features
+      - action: action_get_product_features
+
+  - rule: Provide product technical specs
+    steps:
+      - intent: ask_product_technical_specs
+      - action: action_get_product_technical_specs
+
+  - rule: Provide product price
+    steps:
+      - intent: ask_product_price
+      - action: action_get_product_price
+
+  - rule: Provide product link
+    steps:
+      - intent: ask_product_link
+      - action: action_get_product_link
+
+  - rule: Product type
+    steps:
+      - intent: ask_product_type
+      - action: utter_ask_product_type
+
+  - rule: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+      
+  - rule: Goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

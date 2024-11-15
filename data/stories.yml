@@ -1,0 +1,128 @@
+version: "3.1"
+
+stories:
+- story: ask for aptomat
+  steps:
+  - intent: ask_aptomat
+  - action: action_get_product
+
+- story: ask for sensor products
+  steps:
+  - intent: ask_sensor_product
+  - action: action_get_product
+
+- story: ask for controller products
+  steps:
+  - intent: ask_controller_product
+  - action: action_get_product
+
+- story: ask for camera
+  steps:
+  - intent: ask_camera_product
+  - action: action_get_product
+
+- story: ask for switch bluetooth
+  steps:
+  - intent: ask_switch_bluetooth
+  - action: action_get_product
+
+- story: ask for switch resistance 
+  steps:
+  - intent: ask_switch_resistance
+  - action: action_get_product  
+
+- story: ask for switch touch
+  steps:
+  - intent: ask_switch_touch
+  - action: action_get_product
+
+- story: ask for switch stair
+  steps:
+  - intent: ask_switch_stair
+  - action: action_get_product
+
+- story: ask for switch cuon
+  steps:
+  - intent: ask_switch_cuon 
+  - action: action_get_product
+
+- story: ask for switch auto pump
+  steps:
+  - intent: ask_auto_pump
+  - action: action_get_product
+
+- story: ask for switch wifi
+  steps:
+  - intent: ask_switch_wifi
+  - action: action_get_product
+
+- story: ask for smart lock
+  steps:
+  - intent: ask_smart_lock
+  - action: action_get_product
+
+- story: ask for light bulb
+  steps:
+  - intent: ask_light_bulb
+  - action: action_get_product  
+
+- story: ask curtain
+  steps:
+  - intent: ask_curtain
+  - action: action_get_product  
+
+- story: ask socket datic 
+  steps:
+  - intent: ask_socket_datic
+  - action: action_get_product  
+
+- story: ask anti shock socket
+  steps:
+  - intent: ask_anti_shock_socket
+  - action: action_get_product  
+
+- story: ask socket smart
+  steps:
+  - intent: ask_socket_smart
+  - action: action_get_product    
+
+###
+- story: user asks for product price
+  steps:
+  - intent: ask_product_price
+  - action: action_get_product_price
+
+- story: user asks for product features
+  steps:  
+  - intent: ask_product_features
+  - action: action_get_product_features
+
+- story: user asks for product link
+  steps:  
+  - intent: ask_product_link
+  - action: action_get_product_link
+
+- story: user asks for product techinal specs
+  steps:  
+  - intent: ask_product_technical_specs
+  - action: action_get_product_technical_specs  
+
+- story: ask type exception
+  steps:
+  - intent: ask_type_exception
+  - action: utter_ask_type_exception
+
+- story: user greets bot
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: user goodbye bot 
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks

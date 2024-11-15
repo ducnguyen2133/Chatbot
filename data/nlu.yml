@@ -1,0 +1,192 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Xin chào
+      - Chào bạn
+      - Chào
+      - Hi
+      - Hello
+      - hey
+      - alo
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - tạm biệt
+      - byebye
+
+  - intent: thanks
+    examples: |  
+      - cảm ơn
+      - thanks
+      - ty
+      - ok 
+      - alright
+      - thx
+
+  - intent: ask_type_exception
+    examples: |
+      - máy tính
+      - la bàn
+      - tivi
+      - điện thoại
+      - máy tính bảng
+      - laptop
+      - xe máy
+      - ô tô
+      - xe đạp 
+      - quạt
+
+  - intent: ask_aptomat
+    examples: |
+      - Tôi muốn biết về aptomat
+      - Aptomat
+      - Sản phẩm aptomat
+
+  - intent: ask_sensor_product
+    examples: |
+      - Tôi muốn biết về cảm biến
+      - Cảm biến
+      - Sản phẩm cảm biến
+
+  - intent: ask_controller_product
+    examples: |
+      - Tôi cần thông tin về điều khiển
+      - Điều khiển
+      - Sản phẩm điều khiển
+
+  - intent: ask_camera_product
+    examples: |
+      - Tôi muốn biết về camera
+      - Camera
+      - Sản phẩm camera
+
+  - intent: ask_switch_bluetooth
+    examples: |
+      - Tôi cần thông tin về công tắc bluetooth
+      - Công tắc Bluetooth
+      - Sản phẩm công tắc bluetooth
+
+  - intent: ask_switch_resistance
+    examples: |
+      - Tôi muốn biết về công tắc chống giật
+      - Công tắc chống giật
+      - Sản phẩm công tắc chống giật
+
+  - intent: ask_switch_touch
+    examples: |
+      - Tôi cần thông tin về công tắc cảm ứng
+      - Công tắc cảm ứng
+      - Sản phẩm công tắc cảm ứng
+
+  - intent: ask_switch_stair
+    examples: |
+      - Tôi muốn biết về công tắc cầu thang
+      - Công tắc cầu thang
+      - Sản phẩm công tắc cầu thang
+
+  - intent: ask_switch_cuon
+    examples: |
+      - Tôi cần thông tin về công tắc cửa cuốn
+      - Công tắc cửa cuốn
+      - Sản phẩm công tắc cửa cuốn
+
+  - intent: ask_auto_pump
+    examples: |
+      - Tôi cần thông tin về bơm tưới tự động
+      - Bơm tưới tự động
+      - Loại sản phẩm bơm tưới tự động
+
+  - intent: ask_switch_wifi
+    examples: |
+      - Tôi muốn biết về công tắc wifi
+      - Công tắc wifi
+      - Loại công tắc wifi
+
+  - intent: ask_smart_lock
+    examples: |
+      - Tôi muốn biết về khóa thông minh
+      - Khóa thông minh
+      - Sản phẩm khóa thông minh
+
+  - intent: ask_light_bulb
+    examples: |
+      - Tôi muốn biết về đui đèn
+      - Đui đèn
+      - Sản phẩm đui đèn
+
+  - intent: ask_curtain
+    examples: |
+      - Tôi cần thông tin về rèm
+      - Rèm
+      - Sản phẩm rèm
+
+  - intent: ask_socket_datic
+    examples: |
+      - Tôi muốn biết về ổ cắm Datic
+      - Ổ cắm Datic
+      - Sản phẩm ổ cắm Datic
+
+  - intent: ask_anti_shock_socket
+    examples: |
+      - Tôi cần thông tin về ổ cắm chống giật
+      - Ổ cắm chống giật
+      - Sản phẩm ổ cắm chống giật
+
+  - intent: ask_socket_smart
+    examples: |
+      - Tôi muốn biết về ổ cắm thông minh
+      - Ổ cắm thông minh
+      - Sản phẩm ổ cắm thông minh 
+
+  - intent: ask_product_type
+    examples: |
+      - Loại sản phẩm nào
+      - Kể tên loại sản phẩm
+      - Có những loại sản phẩm gì?
+      - Một số loại sản phẩm
+      - Có sản phẩm nào
+
+  - intent: ask_product_price
+    examples: |
+      - Giá của [Aptomat cầu dao thông minh đo năng lượng Hunonic Notec](product) là bao nhiêu?
+      - Giá sản phẩm [Bộ cảm biến chuyển động Hunonic Pir Sensor](product) là gì?
+      - Tôi muốn biết giá của [Bộ điều khiển Hunonic IR Smart](product).
+      - Giá của [Camera Wifi thông minh ICat Indoor](product) là bao nhiêu?
+      - Bạn có thể cho tôi biết giá của [Công tắc Hunonic Lahu 4 kênh](product)?
+      - Giá sản phẩm [Khóa thông minh TADOLock Cửa gỗ vàng](product) là gì?
+      - Tôi cần biết giá của [Ổ cắm Datic 2 ổ có tiếp địa trắng](product).
+
+  - intent: ask_product_features
+    examples: |
+      - Tính năng của [Công tắc thông minh Hunonic](product) là gì?
+      - Tôi cần biết tính năng của [Ổ cắm thông minh Hunonic](product).
+      - Bạn có thể cho tôi biết tính năng của [Cảm biến ánh sáng Hunonic](product)?
+      - Tính năng của [Camera Wifi thông minh ICat Outdoor](product) là gì?
+      - Tôi muốn biết tính năng của [Bộ điều khiển trung tâm Hunonic Home Server](product).
+      - Bạn có thể cho tôi biết tính năng của [Công tắc chống giật bình nóng lạnh thông minh Hunonic](product)?
+      - Tính năng của [Đui đèn Wifi Hunonic](product) là gì?
+
+  - intent: ask_product_link
+    examples: |
+      - Cho tôi biết link của [Aptomat cầu dao thông minh đo năng lượng Hunonic Notec](product).
+      - Link sản phẩm [Bộ cảm biến chuyển động Hunonic Pir Sensor](product) ở đâu?
+      - Bạn có thể cho tôi biết link của [Bộ điều khiển Hunonic IR Smart](product)?
+      - Cho tôi biết link của [Camera Wifi thông minh ICat Mini](product).
+      - Đường dẫn mua sản phẩm [Công tắc Hunonic Luxury hình chữ nhật viền vàng](product) ở đâu?
+      - Bạn có thể cho tôi biết đường dẫn của [Khóa thông minh TADOLock Cửa nhôm đen](product)?
+      - Đường dẫn của [Công tắc cửa cuốn thông minh Hunonic Door trắng](product) ở đâu?
+
+  - intent: ask_product_technical_specs
+    examples: |
+      - Thông số kỹ thuật của [Công tắc thông minh Hunonic](product) là gì?
+      - Tôi muốn biết thông số kỹ thuật của [Ổ cắm thông minh Hunonic](product).
+      - Bạn có thể cho tôi biết thông số kỹ thuật của [Cảm biến chuyển động Hunonic Pir Sensor hình cầu](product)?
+      - Thông số kỹ thuật của [Bộ điều khiển Hunonic IR Smart Pro](product) là gì?
+      - Tôi cần biết thông số kỹ thuật của [Cảm biến nhiệt ẩm Wifi Hunonic](product).
+      - Bạn có thể cho tôi biết thông số kỹ thuật của [Camera Wifi thông minh ICat Indoor](product)?
+      - Thông số kỹ thuật của [Công tắc cảm ứng Wifi Hunonic hình chữ nhật viền vàng](product) là gì?
+      

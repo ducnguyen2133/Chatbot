@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-product",
+      "2": "I-product",
+      "3": "L-product",
+      "4": "U-product",
+      "5": "B-product_type",
+      "6": "I-product_type",
+      "7": "L-product_type",
+      "8": "U-product_type",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-product": 1,
+      "I-product": 2,
+      "L-product": 3,
+      "U-product": 4,
+      "B-product_type": 5,
+      "I-product_type": 6,
+      "L-product_type": 7,
+      "U-product_type": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

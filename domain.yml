@@ -1,0 +1,103 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - ask_type_exception
+  - ask_aptomat
+  - ask_sensor_product
+  - ask_controller_product
+  - ask_camera_product
+  - ask_switch_bluetooth
+  - ask_switch_resistance
+  - ask_switch_touch
+  - ask_switch_stair
+  - ask_switch_cuon
+  - ask_auto_pump
+  - ask_switch_wifi
+  - ask_smart_lock
+  - ask_light_bulb
+  - ask_curtain
+  - ask_socket_datic
+  - ask_anti_shock_socket
+  - ask_socket_smart
+  - ask_product_type
+  - ask_product_price
+  - ask_product_features
+  - ask_product_link
+  - ask_product_technical_specs
+
+entities:
+  - product
+
+slots:
+  product:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product
+
+responses:
+  utter_greet:
+    - text: "Xin chào! Hunonic Chatbot có thể giúp bạn trả lời các thông tin về sản phẩm của công ty?"
+    - text: "Chào bạn, tôi là Chatbot của Hunonic?"
+    - text: "Chào bạn, bạn muốn biết thông tin về sản phẩm nào?"
+
+  utter_goodbye:
+    - text: "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi. Hẹn gặp lại quý khách!"
+    - text: "Cảm ơn quý khách đã hỏi!"
+    - text: "Chúc quý khách tìm được sản phẩm mong muốn!"
+    - text: "Cảm ơn bạn đã hỏi thông tin sản phẩm của chúng tôi!"
+    
+  utter_thanks:
+    - text: "Tôi cũng cảm ơn bạn!"
+    - text: "Cảm ơn quý khách đã hỏi!"
+    - text: "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!"
+    - text: "Cảm ơn bạn đã hỏi thông tin sản phẩm của chúng tôi!"
+  
+  utter_ask_type_exception:
+    - text: "Chúng tôi hiện tại không có sản phẩm này. Bạn có muốn biết thông tin về sản phẩm khác không?"
+    - text: "Xin lỗi, chúng tôi không có sản phẩm này. Bạn có muốn tìm loại sản phẩm nào khác không?"
+    - text: "Có thể sản phẩm này không có trong dữ liệu, bạn có muốn tìm sản phẩm khác không?"
+
+  utter_ask_product_type:
+    - text: "Chúng tôi hiện tại có một số loại sản phẩm như sau: <br>
+              1. Công tắc cảm ứng <br>
+              2. Cảm biến <br>
+              3. Bơm tưới tự động <br>
+              4. Công tắc cửa cuốn <br>
+              5. Khóa thông minh.<br>
+              Bạn muốn tìm hiểu thông tin về loại sản phẩm nào hãy nói cho tôi biết!"
+    - text: "Chúng tôi hiện tại có một số loại sản phẩm như sau: <br>
+              1. Công tắc cầu thang <br>
+              2. Camera <br>
+              3. Công tắc Wifi <br>
+              4. Đui đèn <br>
+              5. Rèm. <br>
+              Bạn muốn tìm hiểu thông tin về loại sản phẩm nào hãy nói cho tôi biết!"       
+    - text: "Chúng tôi hiện tại có một số loại sản phẩm như sau: <br>
+              1. Ổ cắm chống giật <br>
+              2. Ố cắm Datic <br>
+              3. Công tắc Bluetooth <br>
+              4. Ô cắm thông minh <br>
+              5. Điều khiển.<br>
+              Bạn muốn tìm hiểu thông tin về loại sản phẩm nào hãy nói cho tôi biết!"         
+    - text: "Chúng tôi cung cấp một số loại sản phẩm như sau: <br>
+              1. Aptomat <br>
+              2. Ố cắm Datic <br>
+              3. Công tắc Bluetooth <br>
+              4. Ô cắm thông minh <br>
+              5. Điều khiển. <br>
+              Bạn muốn tìm hiểu thông tin về loại sản phẩm nào hãy nói cho tôi biết!"                               
+
+actions:
+  - action_get_product
+  - action_get_product_price
+  - action_get_product_features
+  - action_get_product_link
+  - action_get_product_technical_specs
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

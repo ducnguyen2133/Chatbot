@@ -1,0 +1,47 @@
+version: "3.1"
+stories:
+- story: sad path 1 (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: goodbye: not good
+  - action: utter_cheer_up  # predicted: action_get_product
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm  # predicted: greet: yes
+  - action: utter_happy  # predicted: action_get_product
+- story: sad path 2 (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: goodbye: not good
+  - action: utter_cheer_up  # predicted: action_get_product
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: greet: not really
+  - action: utter_goodbye  # predicted: action_get_product
+- story: sad path 3 (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: nlu_fallback: very terrible
+  - action: utter_cheer_up  # predicted: action_get_product
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: greet: no
+  - action: utter_goodbye  # predicted: action_get_product
+- story: bot challenge (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: greet: are you a bot?
+  - action: utter_iamabot  # predicted: action_get_product
+- story: happy path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: nlu_fallback: amazing
+  - action: utter_happy  # predicted: action_get_product
+- story: happy path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great  # predicted: nlu_fallback: amazing
+  - action: utter_happy  # predicted: action_get_product
+  - intent: goodbye
+  - action: utter_goodbye
